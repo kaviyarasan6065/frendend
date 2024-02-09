@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        const totalmembers=['Fyodor Dostoevsky', 'George Eliot', 'Ralph Ellison', 'Euripides', 'William Faulkner', 'William Faulkner', 'Gustave Flaubert', 'Gustave Flaubert', 'Federico García Lorca', 'Gabriel García Márquez', 'Gabriel García Márquez', 'Johann Wolfgang von Goethe', 'Nikolai Gogol', 'Günter Grass', 'João Guimarães Rosa', 'Knut Hamsun', 'Ernest Hemingway', 'Homer', 'Homer', 'Henrik Ibsen', 'James Joyce', 'Franz Kafka', 'Franz Kafka', 'Franz Kafka', 'Kālidāsa', 'Yasunari Kawabata', 'Nikos Kazantzakis', 'D. H. Lawrence', 'Halldór Laxness', 'Giacomo Leopardi', 'Doris Lessing', 'Astrid Lindgren']
+    document.write(totalmembers.length);
+    </script> -->
+    <script>
+        const books=[
+        {'author':'tiruvalluvar',  'book':'tirukkural'},
+        {'author':'kambar',        'book':'kambaramayana'},
+        {'author':'silappathigaram','book':'elango'}
+        ]
+        const tamil=books.map((person)=>{
+            return person.author+" "+ person.book;
+        })
+        document.write(tamil);
+       /* const authors=['tiruvalluvar','kambar','elanga'];
+        const books=['tirukkural','kambaramayanam','silapathigaram'];
+        const tamil=authors.map((books)=>{
+            const book=books
+            return {
+                "authors":authors,
+                "books":books
+            }
+        })
+        document.write(authors);*/
+    </script>
+    <script>
+        const author=['Fyodor Dostoevsky', 'George Eliot', 'Ralph Ellison', 'Euripides', 'William Faulkner', 'William Faulkner', 'Gustave Flaubert', 'Gustave Flaubert', 'Federico García Lorca', 'Gabriel García Márquez', 'Gabriel García Márquez', 'Johann Wolfgang von Goethe', 'Nikolai Gogol', 'Günter Grass', 'João Guimarães Rosa', 'Knut Hamsun', 'Ernest Hemingway', 'Homer', 'Homer', 'Henrik Ibsen', 'James Joyce', 'Franz Kafka', 'Franz Kafka', 'Franz Kafka', 'Kālidāsa', 'Yasunari Kawabata', 'Nikos Kazantzakis', 'D. H. Lawrence', 'Halldór Laxness', 'Giacomo Leopardi', 'Doris Lessing', 'Astrid Lindgren']
+        function removeDublicates(array){
+            let a=[];
+            array.map(x=>!a.includes(x)?a.push(x):"");
+            return a;
+        }
+        document.write(removeDublicates(author));
+    </script>
+     <!-- <script>
+       const author=['Fyodor Dostoevsky', 'George Eliot', 'Ralph Ellison', 'Euripides', 'William Faulkner', 'William Faulkner', 'Gustave Flaubert', 'Gustave Flaubert', 'Federico García Lorca', 'Gabriel García Márquez', 'Gabriel García Márquez', 'Johann Wolfgang von Goethe', 'Nikolai Gogol', 'Günter Grass', 'João Guimarães Rosa', 'Knut Hamsun', 'Ernest Hemingway', 'Homer', 'Homer', 'Henrik Ibsen', 'James Joyce', 'Franz Kafka', 'Franz Kafka', 'Franz Kafka', 'Kālidāsa', 'Yasunari Kawabata', 'Nikos Kazantzakis', 'D. H. Lawrence', 'Halldór Laxness', 'Giacomo Leopardi', 'Doris Lessing', 'Astrid Lindgren']
+      function removeDublicates(array){
+       let a=[];
+       let b=[];
+      array.map(x=>!a.includes(x)?a.push(x):"");
+      return a;
+      array.map(y=>!b.includes(y)?b.push(y):"");
+      return b;
+      }
+      document.write(removeDublicates(author));
+    </script> -->
+
+</body>
+</html>

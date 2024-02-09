@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <!-- <h2>dom</h2>
+    <h1 id="demo"></h1>
+    <script>
+        document.getElementById("demo").innerHTML="kavi";
+    </script> -->
+    <!-- <h1>get class</h1>
+    <h2 id="name">get element</h2>
+    <script>
+        document.getElementById("name").innerHTML="classs name";
+    </script> -->
+    <!-- <img id="name" src="csk.jpg">
+    <script>
+        document.getElementById("name").src="gil.png";
+    </script> -->
+    
+    <!-- <div id="myid" class="myclass">
+        <h2>hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, optio!</p>
+    </div>
+    <script>
+          document.getElementById("myid").innerText
+    </script>
+
+     -->
+     <!-- <h1>tag name</h1>
+     <p>tag name of element</p>
+     <p>hello</p>
+     <p>welcome</p>
+     <script>
+        document.getElementsByTagName("p")[0].innerHTML="the javascript";
+     </script> -->
+     <!-- class name call -->
+     <!-- <p>change the text of the firt element
+     class="examble"</p>
+     <div class="example">element1</div>
+     <div class="example">element2</div>
+     <script>
+        const collection=document.getElementsByClassName("example");
+        collection[0].innerHTML="hello world";
+     </script> -->
+     <!-- dom events -->
+     <!-- <h1>javascript html events</h1>
+     <h2>the onclick attribute</h2>
+     <h2 onclick="this".innerHTML="Oops!">click on the text!</h2>
+     this=keyword;onclick=function -->
+     <!-- function use -->
+     <!-- <button onclick="displayDat()">this is time</button>
+
+     <script>
+        // function function name
+        function displayDat(){
+            document.getElementById("demo").innerHTML=Date();
+            // date();=predifined
+        }
+     </script>
+     <p id="demo"></p> -->
+     enter your name;<input type="text" id="fname"
+     oninput="UpperCase()">
+     <!-- onchange=input get pannum pothu afterchage -->
+     <!-- oninput=input get pannumpothu atten time change agum -->
+     <script>
+        function UpperCase(){
+            const x=document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+        }
+
+     </script>
+     <div onmouseover="mover(this)"
+     onmouseout="mout(this)"
+     style="background-color: aqua;width: 200px;height: 150px;padding: 40px;">
+     kaviyarasan</div>
+     <script>
+        function mover(obj){
+            the.innerHTML="welcome"
+        }
+        function mout(obj){
+            the.innerHTML="kaviyarasan"
+        }
+     </script>
+     <div onmousedown="mdown(this)"
+     onmouseup="mup(this)" 
+     style="background-color: blue;width: 150px;height: 100px;padding: 20px;">clickme</div>
+      <script>
+        function mdown(obj){
+            obj.style.backgroundColor="green";
+            obj.innerHTML="relese me";
+        }
+        function mup(obj){
+        obj.style.backgroundColor="yellow";
+        obj.innerHTML="thankyou";
+        }
+      </script>
+     
+
+     </div>
+
+     
+     
+        
+     
+</body>
+</html>
